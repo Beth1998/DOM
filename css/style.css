@@ -1,0 +1,15 @@
+.scale{
+    transform: scale(1.5);
+}
+
+.center{
+    text-align: center;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
+
+.body{
+    background-color: black;
+}
