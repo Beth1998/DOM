@@ -13,3 +13,32 @@
 .body{
     background-color: black;
 }
+
+.a{
+    text-decoration: none;
+    font-size: 50px;
+    color: brown;
+}
+
+.a2{
+    color: yellow;
+    text-align: center;
+}
+
+.header{
+    background-color: chartreuse;
+}
+
+.aheader{
+    color: rgb(153, 87, 0);
+    font-size: 30px;
+}
+
+.colorFuente{
+    color: rgb(255, 0, 200);
+}
+
+#footeritem2{
+    color: rgb(0, 141, 141);
+    font-size: 40px;
+}
