@@ -1,17 +1,60 @@
-const $head = document.querySelector("#head"); //id
-const $cuerpo = document.querySelector("body"); //etiqueta
-const $footer = document.querySelector(".footer"); //clase
-const $a = document.querySelector("#aitem");
-const $a2 = document.querySelector("#aitem2");
-const $header = document.querySelector(".header");
-const $header2 = document.querySelector(".aheader");
-const $footeritem2 = document.querySelector("#footeritem2")
+const $head = document.querySelector("#head");
+const $body = document.querySelector("body");
+const $footer = document.querySelector(".footer")
+const $a = document.querySelector("#aitem")
+const $a2 = document.querySelector("#aitem2")
 
-//Hace referencia a que voy a manipular un objeto del dom
-//Manipulacion de dom
-$a.classList.add("a")
 $a2.classList.add("a2")
+$a.classList.add("a")
 $footer.classList.add("colorFuente")
-$header.classList.add("header")
-$header2.classList.add("aheader")
-$footeritem2.classList.add("footeritem2")
+
+const $sitioEtq = document.querySelector("#SITIOETQ")
+const $parrafo = document.querySelector(".p")
+
+const $flexSection = document.querySelector(".flex-section")
+
+$parrafo.setAttribute("id","p2")
+ console.log($sitioEtq.getAttribute("href"));
+
+ const $agregarParrafo = document.querySelector(".addP")
+
+ function addParrafo() {
+    let p2 = document.createElement("p");
+    
+    let infP = document.createTextNode("HOLA HOLA HOLA")
+    p2.appendChild(infP);
+
+    p2.setAttribute("class", "parrafo2");
+    $flexSection.appendChild(p2)
+ }
+
+ $agregarParrafo.addEventListener("click", addParrafo)
+
+
+ let dias = ['lunes', 'martes',' miercoles','jueves','viernes','sabado','domingo']
+
+const $section2 = document.querySelector(".flex-section2");
+ /*let ul = document.createElement("ul");
+
+ $section2.appendChild(ul);
+
+ dias.forEach(item =>{
+   let li = document.createElement("li");
+   li.textContent = item;
+   ul.appendChild(li);
+ })*/
+
+
+ let meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+
+ let ul = document.createElement("ul");
+ $section2.appendChild(ul);
+ let fragmento = document.createDocumentFragment();
+
+ meses.forEach(item =>{
+   let li = document.createElement("li");
+   li.textContent = item;
+   fragmento.appendChild(li);
+ })
+
+ ul.appendChild(fragmento);
