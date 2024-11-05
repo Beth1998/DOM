@@ -58,3 +58,26 @@ const $section2 = document.querySelector(".flex-section2");
  })
 
  ul.appendChild(fragmento);
+
+/*EJERCICIO*/
+const $infoTaty = document.querySelector(".section-infoTaty")
+
+const $botonNombres = document.querySelector(".boton-nombres")
+$botonNombres.addEventListener("click", function (){
+  
+  let nombres = ['Tatiana', 'Lizbeth', 'Guevara', 'Orellana']
+  let ul2 = document.createElement("ul");
+  ul2.setAttribute("class", "ul-nombres");
+  $infoTaty.appendChild(ul2);
+  let fragmento2 = document.createDocumentFragment();
+ 
+   nombres.forEach(item =>{
+   let li2 = document.createElement("li");
+   li2.textContent = item;
+   fragmento2.appendChild(li2);
+ })
+
+  ul2.appendChild(fragmento2);
+
+})
+

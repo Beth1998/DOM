@@ -26,3 +26,8 @@ background-color: black;
     color: yellow;
     text-align: center;
 }
+
+.ul-nombres{
+    background-color: aqua;
+    border-radius: 50px;
+}
